@@ -73,4 +73,6 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 The file code_book.txt includes the list of summarized values and their minimum, median,
 mean, and maximum values.  In additon, the human test subjects are identified by a factor
 (numbered 1 through 30) and the activities (LAYING, SITTING, STANDING, WALKING,
-WALKING_UPSTAIRS, and WALKING_DOWNSTAIRS) are included.
+WALKING_UPSTAIRS, and WALKING_DOWNSTAIRS) are included.  Units are not included in this
+code book because the values have been normalized in a previous analysis step, and
+are not presented as input in engineering units.
