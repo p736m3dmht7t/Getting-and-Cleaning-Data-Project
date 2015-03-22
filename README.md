@@ -1,11 +1,18 @@
 ---
-title: "ADL Project Tidy Data Code Book"
-author: "John D. Phillips"
+title: "Getting and Cleaning Data Project Tidy Data"
+author: "withheld until peer review complete"
 date: "March 21, 2015"
 output: html_document
 ---
+<H1>Introduction</H1>
+The tidy data set is generated from the Human Activity Recognition on Smartphones project by
+calculating the average value of each of the variables collected by Subject and by Activity.
 
-For each record in the dataset it is provided:<p>
+Only the variables titled "mean" or "std" are summarized.
+
+Please see the code_book.txt file for a complete list of the variables so summarized.
+
+The input dataset that was analyzed included for each record in the dataset:<p>
 <li>Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 <li>Triaxial Angular velocity from the gyroscope.
 <li>A 561-feature vector with time and frequency domain variables. 
@@ -54,26 +61,6 @@ These signals were used to estimate variables of the feature vector for each pat
 <li>fBodyGyroMag
 <li>fBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
-
-<li>mean(): Mean value
-<li>std(): Standard deviation
-<li>mad(): Median absolute deviation 
-<li>max(): Largest value in array
-<li>min(): Smallest value in array
-<li>sma(): Signal magnitude area
-<li>energy(): Energy measure. Sum of the squares divided by the number of values. 
-<li>iqr(): Interquartile range 
-<li>entropy(): Signal entropy
-<li>arCoeff(): Autorregresion coefficients with Burg order equal to 4
-<li>correlation(): correlation coefficient between two signals
-<li>maxInds(): index of the frequency component with largest magnitude
-<li>meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-<li>skewness(): skewness of the frequency domain signal 
-<li>kurtosis(): kurtosis of the frequency domain signal 
-<li>bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-<li>angle(): Angle between to vectors.
-
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
 <li>gravityMean
@@ -82,4 +69,8 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 <li>tBodyGyroMean
 <li>tBodyGyroJerkMean
 
-<H1>The Complete List of Variables</H1>
+<H1>Code Book</H1>
+The file code_book.txt includes the list of summarized values and their minimum, median,
+mean, and maximum values.  In additon, the human test subjects are identified by a factor
+(numbered 1 through 30) and the activities (LAYING, SITTING, STANDING, WALKING,
+WALKING_UPSTAIRS, and WALKING_DOWNSTAIRS) are included.
